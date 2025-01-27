@@ -1,0 +1,207 @@
+body {
+    margin: 0 0 0 0;
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    line-height: 1.4;
+    --darkGray: #333;
+    --litRed: #f00;
+    --glowRed: #633;
+    background-color: var(--darkGray);
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+  } 
+
+  h1 {
+    line-height: 1;
+    text-align: center;
+  }
+  /* --------------------------------------------------main------------------------------------------- */
+  main{
+   
+   display: inline-block;
+  }
+ 
+
+.game-box{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background-color: bisque; 
+    border: 4px solid black;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+#scores {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 140px;
+  width: 90%;
+  padding: 10px;
+  position: relative;
+  top: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  border-radius: 8px;
+}
+#human-score {
+  color: #4caf50; /* Green for your score */
+}
+
+#computer-score {
+  color: #f44336; /* Red for computer's score */
+}
+
+img{
+    
+    width: 410px;
+    height: 300px;
+    transition: transform 0.3s ease;
+}
+
+
+
+/* ----------------------------------buton---------------------------------------------- */
+.buttons{
+  padding-right: 6px;
+}
+
+button {
+  background: #fbca1f;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+
+/* ---------------------------------------------------------------------------animaton ---------------------------------------------*/
+@keyframes handBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.hand-animation {
+  animation: handBounce 0.6s ease-in-out;
+}
+
+/* -----------------------------------------------------------footer ---------------------------------------------------------------------*/
+footer{
+margin-top: 100px;
+width: 100%;
+padding-bottom: 100px;
+background-color: rgb(3, 9, 15);
+}
+
+
+
+
+footer>span{
+  padding: 40px 10px 30px 10px;
+  display: block;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ---------------------------------------------footer icon template--------------------------------- */
+textarea {
+  resize: none;
+}
+
+.text {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+white-space: nowrap;
+}
+
+
+
+.svg-inline--fa {
+vertical-align: -0.200em;
+}
+
+.rounded-social-buttons {
+text-align: center;
+}
+
+.rounded-social-buttons .social-button {
+display: inline-block;
+position: relative;
+cursor: pointer;
+width: 3.125rem;
+height: 3.125rem;
+border: 0.125rem solid transparent;
+padding: 0;
+text-decoration: none;
+text-align: center;
+color: #fefefe;
+font-size: 1.5625rem;
+font-weight: normal;
+line-height: 2em;
+border-radius: 1.6875rem;
+transition: all 0.5s ease;
+margin-right: 0.25rem;
+margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+-webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+}
+
+.rounded-social-buttons .fa-linkedin,.fa-github, .social-button {
+font-size: 25px;
+}
+
+
+
+.rounded-social-buttons .social-button.github {
+background: #000000;
+}
+
+.rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
+color: #000000;
+background: #fefefe;
+border-color: #000000;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+background: #007bb5;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+color: #007bb5;
+background: #fefefe;
+border-color: #007bb5;
+}
+
+
